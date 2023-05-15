@@ -1,4 +1,5 @@
 import { Schema,model } from "mongoose";
+
 interface TBook {
     id?:string,
     author: string,
@@ -17,4 +18,4 @@ const BookSchema = new Schema<TBook>({
 });
 
 const  Book = model<TBook>('books',BookSchema)
-export default Book
+export default Book;
