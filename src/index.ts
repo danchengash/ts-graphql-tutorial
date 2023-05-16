@@ -5,7 +5,7 @@ import Book from '../models/books.js';
 
 import { ApolloGateway } from "@apollo/gateway";
 
-const MONGODB = 'mongodb+srv://ngash:skillsapp-dev@cluster0.u8mfkue.mongodb.net/?retryWrites=true&w=majority';
+const MONGODB = process.env.MONGO_LIVE;
 //  'mongodb+srv://localhost:27018/apollo-graph';
 
 const typeDefs = `#graphql
